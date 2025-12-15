@@ -56,7 +56,7 @@ abstract class BaseGenerator
      */
     protected function getMoodlePath(): string
     {
-        return (new Filesystem())->normalizePath(realpath('./moodle/'));
+        return dirname($this->getVendorPath()) . '/' . $this->getInstallDirectory();
     }
 
     /**
@@ -69,6 +69,17 @@ abstract class BaseGenerator
         $vendor = $this->composer->getConfig()->get('vendor-dir');
 
         return (new Filesystem())->normalizePath(realpath($vendor));
+    }
+
+    /**
+     * Get the name of the installation directory.
+     *
+     * @return string The installation directory.
+     */
+    protected function getInstallDirectory(): string
+    {
+        $extra = $this->composer->getPackage()->getExtra();
+        return $extra['install-path'] ?? 'moodle/';
     }
 
     /**
