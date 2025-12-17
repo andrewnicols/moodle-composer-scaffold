@@ -152,7 +152,7 @@ class Scaffolder
             '--adminpass=' . $adminPassword,
             '--adminemail=' . $adminEmail,
             '--shortname=' . $shortName,
-        ], $this->getMoodlePath());
+        ], $this->getMoodlePath(), null, null, null);
 
         $this->io->write('');
         $this->io->write('<info>Launching Moodle installer...</info>');
