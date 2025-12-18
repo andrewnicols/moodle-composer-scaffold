@@ -1,5 +1,5 @@
 {
-    "name": "moodle/core-composer-scaffold",
+    "name": "moodle/moodle-composer-scaffold",
     "description": "A scaffolding tool for Composer-based Moodle installations",
     "type": "composer-plugin",
     "require": {
