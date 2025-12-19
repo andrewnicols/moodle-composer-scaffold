@@ -19,6 +19,9 @@ namespace Moodle\Composer\Scaffold;
 
 use Composer\Util\Filesystem;
 
+/**
+ * Package Path helper.
+ */
 trait PackagePathTrait
 {
     /**
