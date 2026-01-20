@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+## Changed
+
+- Move generation of the autoload shim to `/vendor/autoload.php`
+
 ## [1.0.0] - 2026-01-06
 
 ### Added
