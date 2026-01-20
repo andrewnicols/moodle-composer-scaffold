@@ -66,9 +66,9 @@ The purpose of this is to act as a shim for parts of Moodle which manually load 
 
 It will be generated on every Composer operation, or whenever the `composer scaffold` command is run.
 
-#### Moodle Composer Autoload Bridge Shim - `/moodle/autoload-composer.php`
+#### Moodle Composer Autoload Shim - `/moodle/vendor/autoload.php`
 
-The scaffolder will create a `/moodle/autoload-composer.php` file which will load the Composer Autoload file from the project root.
+The scaffolder will create a `/moodle/vendor/autoload.php` file which will load the Composer Autoload file from the project root.
 
 This is required because in instances where Moodle is symlinked to the target directory (for example when using a Local Composer repository) the symlink source cannot be determined automatically from Moodle.
 
