@@ -32,6 +32,9 @@ class ShimComposerAutoloadFile extends BaseGenerator
     {
         $this->io->write("- <info>Generating Moodle Composer Autoloader shim bridge...</info>");
 
+        $filesystem = new Filesystem();
+        $filesystem->ensureDirectoryExists($this->getMoodlePath() . '/vendor');
+
         file_put_contents(
             $this->getMoodlePath() . '/vendor/autoload.php',
             $this->getTemplateContent(),

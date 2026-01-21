@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+## Fixed
+
+- Create `vendor` directory before generating autoload shim.
+
 ## [1.0.1] - 2026-01-20
 
 ## Changed
