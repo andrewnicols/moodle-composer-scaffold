@@ -7,6 +7,8 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+## [1.0.3] - 2026-01-22
+
 ### Fixed
 
 - Make the composer autoload more fault tolerant and always return the Composer autoloader as the upstream autoloader does.
