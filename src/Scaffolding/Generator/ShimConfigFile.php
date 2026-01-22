@@ -92,6 +92,11 @@ class ShimConfigFile extends BaseGenerator
 
         \$installRoot = {$installRoot};
         \$result = require_once(\$installRoot . '/config.php');
+
+        # Disable features that do not make sense in Composer-based installations.
+        \$CFG->disableupdateautodeploy = true;
+        \$CFG->uninstallclionly = true;
+
         require_once(__DIR__ . '/vendor/autoload.php');
         require_once(__DIR__ . '/public/lib/setup.php');
 

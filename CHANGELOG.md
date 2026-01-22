@@ -7,6 +7,10 @@ The format of this change log follows the advice given at [Keep a CHANGELOG](htt
 
 ## [Unreleased]
 
+### Added
+
+- Disable use of the Web-based Plugin manager.
+
 ## [1.0.3] - 2026-01-22
 
 ### Fixed
